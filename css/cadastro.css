@@ -1,0 +1,28 @@
+/* Account creation page styles */
+.signup-page .auth-aside-copy {
+  margin-block: auto;
+}
+
+.signup-page .auth-aside-copy .eyebrow {
+  color: #a8d4c8;
+}
+
+.signup-page .auth-content {
+  padding-block: 38px;
+}
+
+.signup-page .auth-card h2 {
+  margin-bottom: 5px;
+}
+
+.signup-page .auth-intro {
+  margin-bottom: 21px;
+}
+
+.signup-page .auth-form {
+  gap: 13px;
+}
+
+.signup-page .form-field input, .signup-page .form-field select {
+  min-height: 45px;
+}

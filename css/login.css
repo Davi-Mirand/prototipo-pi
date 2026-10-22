@@ -1,0 +1,112 @@
+/* Login alinhado à paleta institucional da Fatec e do Centro Paula Souza. */
+.login-page {
+  background: var(--platina);
+}
+
+.login-page :is(button, a, input, select):focus-visible {
+  outline-color: rgba(200, 50, 62, .5);
+}
+
+.login-page .site-header {
+  border-bottom-color: var(--cinza-alabastro);
+  background: var(--branco);
+}
+
+.login-page .brand-mark {
+  background: var(--cereja-intensa);
+  box-shadow: 0 7px 16px rgba(200, 50, 62, .2);
+}
+
+.login-page .brand-name,
+.login-page .auth-card h2 {
+  color: var(--azul-yale);
+}
+
+.login-page .header-nav a:hover,
+.login-page .header-nav a[aria-current="page"] {
+  color: var(--cereja-intensa);
+}
+
+.login-page .auth-main,
+.login-page .auth-content {
+  background: var(--branco);
+}
+
+.login-page .auth-aside {
+  background: linear-gradient(145deg, var(--cinza-sombra) 0%, var(--azul-yale) 78%, #173047 100%);
+}
+
+.login-page .auth-aside:before,
+.login-page .auth-aside:after {
+  border-color: rgba(221, 226, 231, .2);
+}
+
+.login-page .auth-aside:before {
+  background: radial-gradient(circle, rgba(200, 50, 62, .22), transparent 68%);
+}
+
+.login-page .auth-aside-copy .eyebrow,
+.login-page .auth-aside-foot span {
+  color: #ffb7be;
+}
+
+.login-page .auth-aside-copy h1 {
+  color: var(--branco);
+}
+
+.login-page .auth-aside-copy p,
+.login-page .auth-aside-foot {
+  color: var(--cinza-alabastro);
+}
+
+.login-page .auth-card {
+  padding-top: 3px;
+}
+
+.login-page .auth-card > .eyebrow {
+  color: var(--cereja-intensa);
+}
+
+.login-page .auth-intro,
+.login-page .form-options {
+  color: var(--cinza-ardosia);
+}
+
+.login-page .form-field label {
+  color: var(--cinza-sombra);
+}
+
+.login-page .form-field input {
+  border-color: var(--cinza-alabastro);
+  background: var(--branco);
+}
+
+.login-page .form-field input:focus {
+  border-color: var(--cereja-intensa);
+  outline-color: rgba(200, 50, 62, .14);
+}
+
+.login-page .check-line input {
+  accent-color: var(--cereja-intensa);
+}
+
+.login-page .form-options a,
+.login-page .auth-switch a {
+  color: var(--azul-yale);
+}
+
+.login-page .auth-submit {
+  margin-top: 6px;
+  background: var(--cereja-intensa);
+}
+
+.login-page .auth-submit:hover {
+  background: var(--blue-dark);
+  box-shadow: 0 8px 18px rgba(36, 68, 95, .2);
+}
+
+.login-page .auth-demo-note {
+  border-color: var(--cinza-alabastro);
+  background: var(--platina);
+  color: var(--cinza-ardosia);
+}

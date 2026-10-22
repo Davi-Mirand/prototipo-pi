@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#24445f">
+  <meta name="description" content="Acompanhe suas ausências e reposições acadêmicas no AulaFlux.">
+  <title>AulaFlux | Área do Professor</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body class="dashboard-page">
+  <div class="app-layout">
+    <aside class="sidebar">
+      <a class="brand" href="professor.html" aria-label="AulaFlux, área do professor">
+        <span class="brand-mark" aria-hidden="true">AF</span>
+        <span><span class="brand-name">AulaFlux</span><span class="brand-caption">Área do professor</span></span>
+      </a>
+      <div class="unit-tag"><span class="unit-dot" aria-hidden="true"></span> FATEC Franco da Rocha <small>PROTÓTIPO</small></div>
+      <nav class="side-nav" aria-label="Navegação principal">
+        <p class="nav-label">MENU PRINCIPAL</p>
+        <a href="#visao-geral" aria-current="page"><span class="side-icon" aria-hidden="true"><span class="material-symbol">dashboard</span></span>Visão geral</a>
+        <a href="#ausencias"><span class="side-icon" aria-hidden="true"><span class="material-symbol">event_busy</span></span>Ausências <span class="nav-count">03</span></a>
+        <a href="#reposicoes"><span class="side-icon" aria-hidden="true"><span class="material-symbol">assignment</span></span>Reposições <span class="nav-count">04</span></a>
+        <a href="#calendario"><span class="side-icon" aria-hidden="true"><span class="material-symbol">calendar_month</span></span>Calendário</a>
+        <a href="#evidencias"><span class="side-icon" aria-hidden="true"><span class="material-symbol">folder_open</span></span>Evidências e documentos</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><strong>Precisa de ajuda?</strong><p>Consulte as etapas para registrar e acompanhar uma reposição.</p><a href="#fluxo">Conhecer o fluxo <span class="material-symbol" aria-hidden="true">arrow_forward</span></a></div>
+        <div class="sidebar-foot"><span class="online-dot" aria-hidden="true"></span> Protótipo acadêmico <span class="version">v1.0</span></div>
+      </div>
+    </aside>
+
+    <main class="main-area" id="visao-geral">
+      <header class="topbar">
+        <div class="breadcrumb">AulaFlux <span aria-hidden="true">/</span> <strong>Área do Professor</strong></div>
+        <div class="topbar-actions">
+          <nav class="role-nav" aria-label="Navegar entre áreas">
+            <a href="professor.html" aria-current="page">Professor</a>
+            <a href="coordenador.html">Coordenador</a>
+          </nav>
+          <a class="user-chip" href="login.html" aria-label="Acessar conta">
+            <span class="avatar material-symbol" aria-hidden="true">account_circle</span>
+            <span class="user-chip-copy"><strong>Mariana Costa</strong><small>Professora</small></span>
+          </a>
+        </div>
+      </header>
+
+      <div class="page-content">
+        <section class="page-heading">
+          <div><p class="eyebrow">ÁREA DO PROFESSOR</p><h1>Bom dia, Mariana <span class="material-symbol" aria-hidden="true">light_mode</span></h1><p class="page-subtitle">Acompanhe suas ausências e organize as reposições das suas aulas.</p></div>
+          <div class="heading-actions"><a class="button button-secondary button-small" href="#ausencias"><span class="material-symbol" aria-hidden="true">add</span> Registrar ausência</a><a class="button button-small" href="#reposicoes"><span class="material-symbol" aria-hidden="true">add</span> Nova reposição</a></div>
+        </section>
+
+        <div class="demo-note"><span class="note-icon material-symbol" aria-hidden="true">info</span><span><strong>Ambiente de demonstração.</strong> Os nomes, datas e números exibidos são fictícios e apresentam o fluxo visual do sistema.</span></div>
+
+        <section class="stat-grid" aria-label="Resumo das atividades">
+        <article class="stat-card" id="ausencias"><div class="stat-top"><span>Ausências registradas</span><span class="stat-icon material-symbol" aria-hidden="true">event_busy</span></div><strong class="stat-value">03</strong><span class="stat-foot"><span class="up">+1</span> neste mês</span></article>
+          <article class="stat-card"><div class="stat-top"><span>Reposições em análise</span><span class="stat-icon gold material-symbol" aria-hidden="true">hourglass_top</span></div><strong class="stat-value">02</strong><span class="stat-foot">Aguardando coordenação</span></article>
+          <article class="stat-card"><div class="stat-top"><span>Reposições aprovadas</span><span class="stat-icon teal material-symbol" aria-hidden="true">check_circle</span></div><strong class="stat-value">08</strong><span class="stat-foot">No semestre atual</span></article>
+          <article class="stat-card"><div class="stat-top"><span>Documentos pendentes</span><span class="stat-icon gold material-symbol" aria-hidden="true">description</span></div><strong class="stat-value">01</strong><span class="stat-foot">Precisa de conferência</span></article>
+        </section>
+
+        <div class="dashboard-grid">
+          <section class="panel" id="reposicoes" aria-labelledby="requests-title">
+            <div class="panel-heading"><div><h2 id="requests-title">Solicitações recentes</h2><p>Veja o andamento das reposições registradas.</p></div><a class="panel-link" href="#todas">Ver todas <span class="material-symbol" aria-hidden="true">arrow_forward</span></a></div>
+            <div class="table-wrap"><table class="data-table">
+              <thead><tr><th>Disciplina / turma</th><th>Aula original</th><th>Proposta</th><th>Status</th></tr></thead>
+              <tbody id="todas">
+                <tr><td class="course-cell"><strong>Engenharia de Software</strong><small>DSM · 1º semestre</small></td><td>08 out. 2026</td><td>22 out. 2026</td><td><span class="status-pill">Em análise</span></td></tr>
+                <tr><td class="course-cell"><strong>Banco de Dados</strong><small>DSM · 1º semestre</small></td><td>06 out. 2026</td><td>20 out. 2026</td><td><span class="status-pill approved">Aprovada</span></td></tr>
+                <tr><td class="course-cell"><strong>Interação Humano-Computador</strong><small>DSM · 3º semestre</small></td><td>02 out. 2026</td><td>23 out. 2026</td><td><span class="status-pill">Em análise</span></td></tr>
+              </tbody>
+            </table></div>
+          </section>
+          <section class="panel" aria-labelledby="attention-title">
+            <div class="panel-heading"><div><h2 id="attention-title">Próximas etapas</h2><p>Itens para acompanhar.</p></div></div>
+            <div class="attention-list">
+              <article class="attention-item"><span class="attention-symbol gold material-symbol" aria-hidden="true">hourglass_top</span><div class="attention-copy"><strong>Proposta em análise</strong><p>Engenharia de Software · aguardando retorno da coordenação.</p></div></article>
+              <article class="attention-item" id="evidencias"><span class="attention-symbol material-symbol" aria-hidden="true">folder_open</span><div class="attention-copy"><strong>Enviar evidência</strong><p>Banco de Dados · anexar lista de presença da reposição.</p></div></article>
+              <article class="attention-item" id="calendario"><span class="attention-symbol material-symbol" aria-hidden="true">calendar_month</span><div class="attention-copy"><strong>Próxima reposição</strong><p>20 out. 2026 · Banco de Dados, sala 12.</p></div></article>
+            </div>
+          </section>
+        </div>
+
+        <section class="panel process-panel" id="fluxo" aria-labelledby="flow-title">
+          <div class="panel-heading"><div><h2 id="flow-title">Como funciona uma reposição</h2><p>Um fluxo claro para acompanhar cada etapa do processo.</p></div><a class="panel-link" href="#flow-title">Entenda as etapas <span class="material-symbol" aria-hidden="true">arrow_forward</span></a></div>
+          <div class="process-steps">
+            <div class="process-step"><span class="process-icon material-symbol" aria-hidden="true">add</span><strong>Registrar ausência</strong><small>Professor</small></div><span class="process-arrow material-symbol" aria-hidden="true">arrow_forward</span>
+            <div class="process-step"><span class="process-icon material-symbol" aria-hidden="true">checklist</span><strong>Analisar solicitação</strong><small>Coordenação</small></div><span class="process-arrow material-symbol" aria-hidden="true">arrow_forward</span>
+            <div class="process-step"><span class="process-icon material-symbol" aria-hidden="true">event_note</span><strong>Realizar reposição</strong><small>Professor</small></div><span class="process-arrow material-symbol" aria-hidden="true">arrow_forward</span>
+            <div class="process-step"><span class="process-icon material-symbol" aria-hidden="true">folder_open</span><strong>Conferir evidências</strong><small>Diretoria</small></div>
+          </div>
+        </section>
+        <section class="panel palette-panel" aria-labelledby="palette-title">
+          <div class="panel-heading"><div><h2 id="palette-title">Paleta institucional</h2><p>Fatec Franco da Rocha · Centro Paula Souza</p></div></div>
+          <ul class="palette-list" aria-label="Cores e códigos da identidade visual">
+            <li><span class="palette-swatch cherry" aria-hidden="true"></span><span><strong>Cereja intensa</strong><small>#C8323E</small></span></li>
+            <li><span class="palette-swatch yale" aria-hidden="true"></span><span><strong>Azul Yale</strong><small>#24445F</small></span></li>
+            <li><span class="palette-swatch white" aria-hidden="true"></span><span><strong>Branco</strong><small>#FFFFFF</small></span></li>
+            <li><span class="palette-swatch platinum" aria-hidden="true"></span><span><strong>Platina</strong><small>#F1F3F5</small></span></li>
+            <li><span class="palette-swatch slate" aria-hidden="true"></span><span><strong>Cinza ardósia</strong><small>#68727F</small></span></li>
+            <li><span class="palette-swatch alabaster" aria-hidden="true"></span><span><strong>Cinza alabastro</strong><small>#DDE2E7</small></span></li>
+            <li><span class="palette-swatch shadow" aria-hidden="true"></span><span><strong>Cinza sombra</strong><small>#20242B</small></span></li>
+          </ul>
+        </section>
+        <footer class="page-footer"><span>AulaFlux · Fatec Franco da Rocha</span><span>Centro Paula Souza · 2026</span></footer>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
