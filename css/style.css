@@ -102,11 +102,15 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   height: 42px;
   place-items: center;
   border-radius: 13px;
-  background: linear-gradient(145deg, var(--cereja-intensa), #a92733);
-  box-shadow: 0 7px 16px rgba(169,24,38,.2);
-  color: #fff;
-  font: 700 .95rem 'Poppins', sans-serif;
-  letter-spacing: -.05em;
+  overflow: hidden;
+  background: var(--branco);
+  box-shadow: 0 5px 14px rgba(32, 36, 43, .15);
+}
+.brand-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .brand-name { display: block; color: var(--navy); font-size: 1.08rem; font-weight: 700; letter-spacing: -.04em; line-height: 1.2; }
 .brand-caption { display: block; margin-top: 3px; color: var(--muted); font-size: .7rem; line-height: 1.3; }

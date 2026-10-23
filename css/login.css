@@ -3,9 +3,6 @@
   background: var(--platina);
 }
 
-.login-page :is(button, a, input, select):focus-visible {
-  outline-color: rgba(200, 50, 62, .5);
-}
 
 .login-page .site-header {
   border-bottom-color: var(--cinza-alabastro);
